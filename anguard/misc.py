@@ -2,9 +2,9 @@ from future import standard_library
 standard_library.install_aliases()
 from anguard.core import *
 from anguard.core.bytecode import *
-from anguard.core.bytecodes.dvm import *
-from anguard.core.bytecodes.apk import *
-from anguard.core.analysis.analysis import *
+from anguard.core.dvm import *
+from anguard.core.apk import *
+from anguard.core.analysis import *
 from anguard.decompiler.decompiler import *
 
 from pickle import dumps, loads

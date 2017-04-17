@@ -2,7 +2,7 @@ import unittest
 
 import sys
 
-from anguard.core.bytecodes import apk
+from anguard.core import apk
 
 import os
 

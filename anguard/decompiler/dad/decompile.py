@@ -30,8 +30,8 @@ import struct
 from collections import defaultdict
 import anguard.core.anconf as anconf
 import anguard.decompiler.dad.util as util
-from anguard.core.analysis import analysis
-from anguard.core.bytecodes import apk, dvm
+from anguard.core import analysis
+from anguard.core import apk, dvm
 from anguard.decompiler.dad.ast import (
     JSONWriter, parse_descriptor, literal_string, literal_null, literal_int,
     literal_long, literal_float, literal_double, literal_bool, literal_hex_int,

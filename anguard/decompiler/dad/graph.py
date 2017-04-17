@@ -151,29 +151,6 @@ class Graph(object):
         for _, node in _visit(self.entry, 1):
             yield node
 
-    def draw(self, name, dname, draw_branches=True):
-        from pydot import Dot, Edge
-        g = Dot()
-        g.set_node_defaults(color='lightgray',
-                            style='filled',
-                            shape='box',
-                            fontname='Courier',
-                            fontsize='10')
-        for node in sorted(self.nodes, key=lambda x: x.num):
-            if draw_branches and node.type.is_cond:
-                g.add_edge(Edge(str(node), str(node.true), color='green'))
-                g.add_edge(Edge(str(node), str(node.false), color='red'))
-            else:
-                for suc in self.sucs(node):
-                    g.add_edge(Edge(str(node), str(suc), color='blue'))
-            for except_node in self.catch_edges.get(node, []):
-                g.add_edge(Edge(str(node),
-                                str(except_node),
-                                color='black',
-                                style='dashed'))
-
-        g.write_png('%s/%s.png' % (dname, name))
-
     def immediate_dominators(self):
         return dom_lt(self)
 

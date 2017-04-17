@@ -10,7 +10,8 @@ from builtins import range
 from past.builtins import basestring
 from builtins import object
 import struct, os, time, sys, shutil
-import binascii, io, stat
+import binascii, stat
+import StringIO
 import io
 import re
 
@@ -783,7 +784,7 @@ class ZipFile(object):
         self.start_dir = offset_cd + concat
         fp.seek(self.start_dir, 0)
         data = fp.read(size_cd)
-        fp = io.StringIO(data)
+        fp = StringIO.StringIO(data)
         total = 0
         while total < size_cd:
             centdir = fp.read(sizeCentralDir)

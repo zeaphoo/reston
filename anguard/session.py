@@ -4,9 +4,9 @@ import hashlib
 import collections
 
 from anguard.core import anconf
-from anguard.core.bytecodes.apk import *
-from anguard.core.bytecodes.dvm import *
-from anguard.core.analysis.analysis import *
+from anguard.core.apk import *
+from anguard.core.dvm import *
+from anguard.core.analysis import *
 from anguard.decompiler.decompiler import *
 from anguard.misc import save_session, load_session
 
