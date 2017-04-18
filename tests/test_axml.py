@@ -1,4 +1,4 @@
-from anguard.core import apk
+from reston.core import apk
 
 def test_AXML():
     filenames = [

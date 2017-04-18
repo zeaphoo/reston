@@ -1,7 +1,7 @@
-from anguard.core import dvm
+from reston.core import dvm
 
 def test_dex():
-    with open("tests/testdata/android/TestsAnguard/bin/classes.dex",
+    with open("tests/testdata/android/TestsReston/bin/classes.dex",
               "rb") as fd:
         d = dvm.DalvikVMFormat(fd.read())
         assert d != None

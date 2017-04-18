@@ -1,5 +1,5 @@
 <?xml version="1.0"?>                                                           
-<parent id="anguard Test">
+<parent id="reston Test">
 
    <main_path>./examples/android/TCDiff/</main_path>
    <libs_path>./libs/</libs_path>
@@ -16,11 +16,11 @@
    <protect_names type="class">
       
       <except_class>
-         <name>org/t0t0/anguard/TCDiff/TCActivity</name>
+         <name>org/t0t0/reston/TCDiff/TCActivity</name>
       </except_class>
 
       <except_fields>
-         <class>org/t0t0/anguard/TCDiff/TCMod1</class>
+         <class>org/t0t0/reston/TCDiff/TCMod1</class>
          <name>TC1</name>
          <descriptor>I</descriptor>
       </except_fields>

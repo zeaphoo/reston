@@ -1,8 +1,10 @@
-# Anguard
+# Reston
 
 ## Features
 
-Anguard is a full python tool to play with Android files.
+Reston is a reverse engine framework.
+
+### reverse android package and binary files.
 
 * DEX, ODEX
 * APK
@@ -11,9 +13,11 @@ Anguard is a full python tool to play with Android files.
 * Disassemble DEX/ODEX bytecodes
 * Decompiler for DEX/ODEX files
 
-## 1. Authors: Anguard Team
+## 1. Authors: Reston Team
 
-Anguard : Anthony Desnos (desnos at t0t0.fr).
+Reston: Wei Zhuo (zeaphoo at gmail.com)
+
+Androguard : Anthony Desnos (desnos at t0t0.fr).
 
 DAD (DAD is A Decompiler): Geoffroy Gueguen (geoffroy dot gueguen at gmail dot com)
 
@@ -24,18 +28,18 @@ Link here to the documentation... sometime...
 
 ## 3. Install
 
-For anguard:
+For reston:
 
-`pip install anguard`
+`pip install reston`
 
 You should be able to use python3 as well:
 
-`pip3 install anguard`
+`pip3 install reston`
 
 
 ## 4. Licenses
 
-* Anguard
+* Reston
 
 Copyright (C) 2017 - , Wei Zhuo (zeaphoo at gmail.com)
 All rights reserved.
