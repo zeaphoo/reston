@@ -11,7 +11,6 @@ reverse android package and binary files.
 * DEX, ODEX
 * APK
 * Android's binary xml
-* Android resources
 * Disassemble DEX/ODEX bytecodes
 * Decompiler for DEX/ODEX files
 
@@ -25,7 +24,7 @@ setup(
     name='reston',
     description='Reston is a reverse engine framwork, current can play with Android files.',
     long_description=__doc__,
-    version='0.3',
+    version='0.4',
     url='http://github.com/zeaphoo/reston/',
     packages=find_packages(),
     license='Apache',
